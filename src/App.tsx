@@ -1,24 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { useDispatch, useSelector } from "react-redux";
+import "./App.css";
+import { Generic } from "./genericComponent";
+import { soma, subtrai } from "./store/actions";
+import { numberState } from "./store/storetool";
 
 function App() {
+  const number = useSelector((state: numberState) => state.valor);
+  console.log(number);
+
+  const dispatch = useDispatch();
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <button
+        onClick={() => {
+          dispatch(subtrai(5));
+        }}
+      >
+        {" "}
+        subtrai
+      </button>
+      <h1>{number}</h1>
+
+      <button
+        onClick={() => {
+          dispatch(soma(5));
+        }}
+      >
+        somar
+      </button>
+      <Generic></Generic>
     </div>
   );
 }

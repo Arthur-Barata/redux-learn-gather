@@ -28,7 +28,9 @@ function App() {
         somar
       </button>
       <Generic></Generic>
-      esse commit foi feito na minha feature-1 com base na development
+      esse commit foi feito na minha feature-1 com base na development esse
+      commit foi feito na feature-2 ainda com base na development segundo commit
+      na feature-2 pra fazer squash
     </div>
   );
 }

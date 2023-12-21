@@ -20,6 +20,7 @@ function App() {
         subtrai
       </button>
       <h1>{number}</h1>
+
       <button
         onClick={() => {
           dispatch(soma(5));
@@ -28,7 +29,6 @@ function App() {
         somar
       </button>
       <Generic></Generic>
-      esse commit foi feito na minha feature-1 com base na development
     </div>
   );
 }

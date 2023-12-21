@@ -30,7 +30,8 @@ function App() {
       <Generic></Generic>
       esse commit foi feito na minha feature-1 com base na development esse
       commit foi feito na feature-2 ainda com base na development segundo commit
-      na feature-2 pra fazer squash hot fixx na release
+      na feature-2 pra fazer squash hot fixx na release na feature-2 pra fazer
+      squash commit direto na minha development
     </div>
   );
 }
